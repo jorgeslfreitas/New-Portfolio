@@ -1,6 +1,6 @@
 :root {
     --fonte-color: #1e1e2a;
-    --bg-color: #60e1e0;
+    --bg-color: #4ba1cf;
 }
 
 body {
@@ -43,12 +43,15 @@ h2 {
     display: flex;
 }
 
-.social-media a {
+.social-media a, 
+.social-media .btn-formacao {
     text-decoration: none;
     color: var(--fonte-color);
     margin: .2rem;
     padding: 1rem 4rem;
+    background-color: var(--bg-color);
     border: 1px solid var(--fonte-color);
+    border-radius: 10px;
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -56,8 +59,9 @@ h2 {
     transition: .5s ease-in-out;
 }
 
-a:hover {
-    background-color: #fff;
+a:hover,
+.btn-formacao:hover {
+    background-color: #95d4f6;
 }
 
 /* MENU HAMBURGUER */
@@ -203,26 +207,42 @@ a:hover {
 .card {
     width: 300px;
     height: 300px;
+    border: 2px solid var(--fonte-color);
     border-radius: 100%;
     margin: 3rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-color);
-    background-image: url('../img/foto-jorge.png');
+    background-color: #ffffff00;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+
+.project1 {
+    background-image: url('../img/doardor-rp-logo-dark.png');
+}
+
+.project2 {
+    background-image: url('../img/pokeball.png');
+}
+
+.project3 {
+    background-image: url('../img/foto-jorge.png');
 }
 
 .card-text {
     width: 40%;
     letter-spacing: 1px;
-    color: rgb(109, 109, 109);
+    color: var(--fonte-color);
+}
+
+.card-text a {
+    text-decoration: none;
 }
 
 .card-wrapper {
@@ -241,7 +261,7 @@ a:hover {
     width: 100px;
     border-radius: 50%;
     display: block;
-    border: 1px solid #fff;
+    border: 1px solid #000000;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
@@ -255,7 +275,7 @@ a:hover {
 }
 
 .card-wrapper p {
-    font-size: 0;
+    font-size: 40px;
     visibility: visible;
     opacity: 0;
     font-weight: bold;
@@ -276,8 +296,36 @@ a:hover {
 .card:hover > .card-wrapper p {
     opacity: 1;
     visibility: visible;
-    font-size: 14px;
+    font-size: 20px;
 }
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-text img {
+    max-width: 50px;
+    margin: 0 .5rem;
+}
+
+.courses {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/check.svg');
+    margin-right: .5rem;
+}
+
 
 /* FOOTER */
 

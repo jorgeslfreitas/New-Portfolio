@@ -1,103 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Fontes do Projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio</title>
 
 </head>
+
 <body>
     <header id="header-container">
         <div class="header"></div>
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" name="checkbox" id="toggle">
-                    <label for="toggle" class="checkbox">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="#">Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                        
-                </div>
-            </div>
+        <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="checkbox" id="toggle">
+                <label for="toggle" class="checkbox">
+                    <div class="trace"></div>
+                    <div class="trace"></div>
+                    <div class="trace"></div>
+                </label>
+                <div class="menu"></div>
+                <nav class="menu-items">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="formacoes-cursos.html">Formações e Cursos</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <h1>Jorge Santos Lima Freitas</h1>
-            <h2>Front-end Developer</h2>
-            <div class="social-media">
-                <a href="#">Linkedin</a>
-                <a href="#">GitHub</a>
             </div>
+        </div>
+
+        <h1>Jorge Santos Lima Freitas</h1>
+        <h2>Front-end Developer</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/jorge-freitas-dev/" target="_blank">Linkedin</a>
+            <a href="https://github.com/jorgeslfreitas" target="_blank">GitHub</a>
+        </div>
 
     </header>
 
     <main id="container">
         <div class="card-container">
-            <div class="card">
+            <div class="card project1">
                 <div class="card-wrapper">
-                    <h2>Projeto 1</h2>
                     <p>Vem ver!</p>
+
                 </div>
             </div>
             <div class="card-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium cum suscipit deleniti illo, sunt minima ullam qui soluta, voluptates, placeat reiciendis veritatis nostrum nam. Nisi fuga maiores veritatis iusto.</p>
+                <h2>Doador RP</h2>
+                <p>
+                    Criação do site com o intuito de proporcionar a população uma maneira mais fácil, clara e objetiva
+                    sobre <strong>doações de sangue</strong>.
+                </p>
+                <a href="https://www.doadorrp.com.br/" target="_blank">https://www.doadorrp.com.br/</a>
+                <p><strong>Tecnologias usadas no projeto:</strong></p>
+                <img src="assets/img/tecnologias/php.svg" alt="PHP" title="PHP">
+                <img src="assets/img/tecnologias/javascript.svg" alt="JavaScript" title="JavaScript">
+                <img src="assets/img/tecnologias/html.svg" alt="HTML" title="HTML">
+                <img src="assets/img/tecnologias/css.svg" alt="CSS" title="CSS">
+                <img src="assets/img/tecnologias/mysql.svg" alt="MySql" title="MySql">
+                <img src="assets/img/tecnologias/git.svg" alt="Git" title="Git">
+                <img src="assets/img/tecnologias/github.svg" alt="GitHub" title="GitHub">
+
             </div>
         </div>
 
         <div class="card-container">
-            <div class="card">
+            <div class="card project2">
                 <div class="card-wrapper">
-                    <h2>Projeto 2</h2>
                     <p>Vem ver!</p>
                 </div>
             </div>
             <div class="card-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium cum suscipit deleniti illo, sunt minima ullam qui soluta, voluptates, placeat reiciendis veritatis nostrum nam. Nisi fuga maiores veritatis iusto.</p>
+                <h2>Pokedex</h2>
+                <p>
+                    Consumo da API RESTfull Poke API, afim de estudos. Criação de uma pokedex listando todos os pokemons.
+                </p>
+                <a href="https://jorgeslfreitas.github.io/Pokedex/" target="_blank">https://jorgeslfreitas.github.io/Pokedex/</a>
+                <p><strong>Tecnologias usadas no projeto:</strong></p>
+                <img src="assets/img/tecnologias/javascript.svg" alt="JavaScript" title="JavaScript">
+                <img src="assets/img/tecnologias/html.svg" alt="HTML" title="HTML">
+                <img src="assets/img/tecnologias/css.svg" alt="CSS" title="CSS">
+                <img src="assets/img/tecnologias/git.svg" alt="Git" title="Git">
+                <img src="assets/img/tecnologias/github.svg" alt="GitHub" title="GitHub">
             </div>
         </div>
 
         <div class="card-container">
-            <div class="card">
+            <div class="card project3">
                 <div class="card-wrapper">
-                    <h2>Projeto 3</h2>
                     <p>Vem ver!</p>
                 </div>
             </div>
             <div class="card-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium cum suscipit deleniti illo, sunt minima ullam qui soluta, voluptates, placeat reiciendis veritatis nostrum nam. Nisi fuga maiores veritatis iusto.</p>
+                <h2>Portfolio Pessoal</h2>
+                <p>
+                    Criação de um portfólio pessoal contendo todas minhas informações pessoais, formações acadêmicas, cursos extracurriculares, experiências profissionais e meus projetos desenvolvidos até o momento na área de desenvolvimento.
+                </p>
+                <a href="https://jorgeslfreitas.github.io/Portfolio/" target="_blank">https://jorgeslfreitas.github.io/Portfolio/</a>
+                <p><strong>Tecnologias usadas no projeto:</strong></p>
+                <img src="assets/img/tecnologias/javascript.svg" alt="JavaScript" title="JavaScript">
+                <img src="assets/img/tecnologias/html.svg" alt="HTML" title="HTML">
+                <img src="assets/img/tecnologias/css.svg" alt="CSS" title="CSS">
+                <img src="assets/img/tecnologias/git.svg" alt="Git" title="Git">
+                <img src="assets/img/tecnologias/github.svg" alt="GitHub" title="GitHub">
             </div>
         </div>
 
     </main>
 
     <footer id="footer-container">
-        <p>Feito por Jorge Freitas.</p>
+        <p>Feito por Jorge Freitas 🚀.</p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
